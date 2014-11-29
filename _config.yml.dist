@@ -1,7 +1,7 @@
 # Site settings
-title:       Jianfei Wu
-email:       wujianfei871015@gmail.com
-author:      Michael
+title:       
+email:       
+author:      
 description: ""
 baseurl:     ""
 url:         ""
@@ -16,9 +16,9 @@ show_post_footers:  false
 
 # Social icons
 show_social_icons: true
-github_username: yellowmamba
-twitter_username: wujianfei
-linkedin_username: wujianfei
+github_username: 
+twitter_username: 
+linkedin_username: 
 
 # Build settings
 markdown:     kramdown
