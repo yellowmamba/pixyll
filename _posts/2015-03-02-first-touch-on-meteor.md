@@ -1,8 +1,8 @@
 ---
 layout: post
 title: First touch on Meteor
-date: 2015-02-28
-summary: Meteor, which has been out for a while, is a full-stack framework to build web apps purely in Javascript, in this article I will be talking through some of its key concepts based on my own understanding.
+date: 2015-03-02
+summary: Meteor, which has been out for a while, is a full-stack framework to build web apps purely in Javascript, in this article I will be talking through some of its key concepts, e.g. Meteor's reactive data source and and its publish/subscribe model.
 categories: [Meteor]
 ---
 
