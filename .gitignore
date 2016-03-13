@@ -7,3 +7,4 @@ _config.gh-pages.yml
 
 _config.yml
 s3_website.yml
+Gemfile.lock

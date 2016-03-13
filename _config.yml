@@ -1,0 +1,31 @@
+# Site settings
+title:       Jianfei Wu
+email:       wujianfei871015@gmail.com
+author:      Michael
+description: "I write stuff about ins and outs of my daily work as a PHP developer, working in a digital agency in Melbourne, Australia. Most of the stuff here is my takeaway from learning Symfony2 framework and devops related pratices."
+baseurl:     ""
+url:         "http://wujianfeionline.com"
+
+# Google analytics
+google_analytics: UA-57186197-1
+
+# Optional features
+animated:           false
+show_related_posts: false
+show_post_footers:  false
+
+# Social icons
+show_social_icons: true
+github_username: yellowmamba
+twitter_username: wujianfei
+linkedin_username: wujianfei
+
+# Build settings
+markdown:     kramdown
+permalink:    pretty
+paginate:     5
+sass:
+  compressed: true
+
+gems:
+  - jekyll-sitemap
