@@ -26,6 +26,7 @@ Gitlab being a ruby application, you will surely need ruby runtime on your serve
 > sudo make
 > sudo make install
 ~~~
+
 ## Get URL right
 An interesting issue came up when I initially attempted to browse it from the url. Looks like Gitlab installation takes the server's hostname as its FQDN, which makes perfect sense, as your server may not be public yet. You will most likely need to change a parameter called `external_url` in its default configuration file `/etc/gitlab/gitlab.rb`. Set the domain to be the FQDN and you should be ready to go. I tested it first in a vagrant box, in which case, the value of this parameter is likely to be `"http://localhost"`, then you should be able to access it from something like `http://localhost:8080` on your host machine.
 
