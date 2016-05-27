@@ -1,8 +1,8 @@
 # Site settings
-title:       Jianfei Wu
+title:       Michael Wu
 email:       wujianfei871015@gmail.com
 author:      Michael
-description: "I write stuff about ins and outs of my daily work as a PHP developer, working in a digital agency in Melbourne, Australia. Most of the stuff here is my takeaway from learning Symfony2 framework and devops related pratices."
+description: "I am geared to learning more about cloud computing."
 baseurl:     ""
 url:         "http://wujianfeionline.com"
 
@@ -22,8 +22,8 @@ linkedin_username: wujianfei
 
 # Build settings
 markdown:     kramdown
-permalink:    pretty
-paginate:     5
+permalink:    /posts/:title/
+paginate:     5 
 sass:
   compressed: true
 
