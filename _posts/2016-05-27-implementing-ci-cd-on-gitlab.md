@@ -67,7 +67,7 @@ concurrent = 1
 As you can see, you have two runners configured, respectively for two projects, and they are both using shell as the executor. You might already noticed that under each runner, there's configuration for various executor options. And yes, docker is one of them! For more information of runner configuration, please have a look [over here](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/tree/master/docs/executors).
 
 ## Continuous Delivery
-At the end of the day, you want your code automatically shipped out to production. After all, that's the end goal of employing a CI system, i.e. to make sure new code is well-tested and then delivered without human intervention. You can achieve that by configure your project's CI configuration.
+At the end of the day, you want your code automatically shipped out to production. After all, that's the end goal of employing a CI system, i.e. to make sure new code is well-tested and then delivered without human intervention. You can achieve that by configuring your project's CI configuration.
 
 The configuration of Gitlab-ci is a bit similar to Travis. It's using yaml syntax. You will need to create a file named **.gitlab-ci.yml** under your project root. Take the blow snippet for example:
 
@@ -87,7 +87,7 @@ staging:
   allow_failure: true
 ~~~
 
-You can define as many **jobs** as you want, using a top-level key, as long as the word is not reserved. From above example, you can see we have two jobs, **production** and **staging**. Under each job, we run a command **only** on the branch as we specify. In this example, we use Capistrano to deploy code to the server. So what happens is, if you push a commit to your remote master branch, the **production** job will be run, which runs `cap production deploy --trace` command on the CI server. (Of course, this would require Capistrano installed on the CI server and properly configure the deploy key, which is out of scope of this article.)
+You can define as many **jobs** as you want, using a top-level key, as long as the word is not reserved. From above example, you can see we have two jobs, **production** and **staging**. Under each job, we run a command **only** on the branch as we specify. In this example, we use Capistrano to deploy code to the server. So what happens is, if you push a commit to your remote master branch, the **production** job will be run, which runs `cap production deploy --trace` command on the CI server. (Of course, this would require Capistrano to be installed on the CI server and proper configuration for the deploy key, which is out of scope of this article.)
 
 There are many more configuration options available to this file, e.g. **stages**, **services**, which I am not going to elaborate on here. Feel free to head over to their [documentation](http://docs.gitlab.com/ce/ci/yaml/README.html).
 
