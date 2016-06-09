@@ -29,3 +29,5 @@ sass:
 
 gems:
   - jekyll-sitemap
+
+date_format: "%Y-%m-%d"
